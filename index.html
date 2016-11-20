@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robot BattleDome</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<!-- creating the robots -->
+	<div id="battleDomeSetUp">
+		<h1>Welcome to the Battle Dome!</h1>
+		<div id="jack">
+			<h3>Pick your Fighter!</h3>
+			<div id="robotPc" class="cardSelect">
+				<input id="playerOne" type="text" placeholder="player one">
+				<select id="selectPc">
+					<option>Choose one!</option>
+					<optgroup label="drone">
+						<option value="MiniDrone">mini-Drone</option>
+						<option value="StealthDrone">stealth-drone</option>
+					</optgroup>
+					<optgroup label="bipedal">
+						<option value="C3po">c3po</option>
+						<option value="Terminator">terminator</option>
+					</optgroup>
+					<optgroup label="atv">
+						<option value="AiTank">Ai-tank</option>
+						<option value="BattleBot">battleBot</option>
+					</optgroup>
+				</select>
+			</div>
+
+			<div id="robotNpc" class="cardSelect">
+				<input id="playerTwo" type="text" placeholder="player two">
+				<select id="selectNpc">
+					<option>Choose one!</option>
+					<optgroup label="drone">
+						<option value="MiniDrone">mini-Drone</option>
+						<option value="StealthDrone">stealth-drone</option>
+					</optgroup>
+					<optgroup label="bipedal">
+						<option value="C3po">c3po</option>
+						<option value="Terminator">terminator</option>
+					</optgroup>
+					<optgroup label="atv">
+						<option value="AiTank">Ai-tank</option>
+						<option value="BattleBot">battleBot</option>
+					</optgroup>
+				</select>
+			</div>
+			<button type="button" id="readyToFight">Ready to fight?!</button>
+		</div>
+	</div>
+
+	<div class="battleDome">
+		<div>
+			<div class="card playerCardPc"></div>
+			<button type="button" id="attack">Attack!</button>
+			<div class="card playerCardNpc"></div>
+		</div>
+		<div id="battleEnd"></div>
+	</div>
+
+	<script type="text/javascript" src="dist/app.js"></script>
+</body>
+</html>
